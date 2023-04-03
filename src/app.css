@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-text {
+    @apply bg-gradient-to-br from-pink-500 to-yellow-500 text-transparent bg-clip-text;
+}
+
+.text-pd {
+    @apply py-6 max-w-md md:max-w-2xl;
+}
