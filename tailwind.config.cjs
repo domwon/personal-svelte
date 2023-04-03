@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  safelist: ['link-primary', 'link-secondary', 'link-warning', 'link-accent'],
+  safelist: [
+    'link-primary', 'link-secondary', 'link-warning', 'link-accent',
+    'opacity-0', 'transform', 'translate-y-5', 'transition-opacity', 'duration-1000'
+  ],
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {},
