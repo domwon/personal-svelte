@@ -2,10 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradient-text {
+.text-gradient {
     @apply bg-gradient-to-br from-pink-500 to-yellow-500 text-transparent bg-clip-text;
 }
 
 .text-pd {
     @apply py-6 max-w-md md:max-w-2xl;
 }
+
+/* Glow CSS classes */
+.glow-white {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.glow-primary {
+    box-shadow: 0 0 5px rgba(236, 72, 153, 0.2), 0 0 10px rgba(236, 72, 153, 0.5);
+}
+
+.glow-secondary {
+    box-shadow: 0 0 5px rgba(255, 91, 106, 0.2), 0 0 10px rgba(255, 91, 106, 0.5);
+}
+
+.glow-accent {
+    box-shadow: 0 0 5px rgba(255, 134, 58, 0.2), 0 0 10px rgba(255, 134, 58, 0.5);
+}
+
+.text-glow-white {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.text-glow-primary {
+    text-shadow: 0 0 5px rgba(236, 72, 153, 0.2), 0 0 10px rgba(236, 72, 153, 0.5);
+}
+
+.text-glow-secondary {
+    text-shadow: 0 0 5px rgba(255, 91, 106, 0.2), 0 0 10px rgba(255, 91, 106, 0.5);
+}
+
+.text-glow-accent {
+    text-shadow: 0 0 5px rgba(255, 134, 58, 0.2), 0 0 10px rgba(255, 134, 58, 0.5);
+}
+
+/* Animate on scroll classes */
+
+.hiddenLeft, .hiddenRight {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.hiddenRight {
+    transform: translateX(100%);
+}
+
+@media(prefers-reduced-motion) {
+    .hiddenLeft, .hiddenRight {
+        transition: none;
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0);
+}
+
+.linkie:nth-child(2), .area:nth-child(2) {
+    transition-delay: 200ms;
+}
+.linkie:nth-child(3), .area:nth-child(3) {
+    transition-delay: 400ms;
+}
+.linkie:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+
+
+
