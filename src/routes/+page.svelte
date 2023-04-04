@@ -36,7 +36,7 @@
 		// set observer on elements with 'test' class
 		const hiddenEls = [
 			...document.querySelectorAll('.hiddenLeft'),
-			...document.querySelectorAll('.hiddenRight')
+			...document.querySelectorAll('.hiddenBottom')
 		];
 		hiddenEls.forEach((el) => {
 			if (el) {
@@ -57,7 +57,7 @@
 		/>
 		<div class="md:pl-8">
 			<h1 class="text-4xl font-bold hiddenLeft text-gradient">Dominic Nguyen</h1>
-			<p class="py-6 max-w-md md:max-w-sm hiddenRight text-white">
+			<p class="py-6 max-w-md md:max-w-sm hiddenBottom text-white">
 				Hi there! I'm a full-stack developer & data scientist currently building
 				<Link name="XplorePod" link="https://xplorepod.com" />, a productivity app to help people do
 				more of what matters to them most and get more out of life.
@@ -68,7 +68,7 @@
 					<li class="linkie hiddenLeft">
 						<a
 							class="link link-{link.color}"
-							href={link.url}
+							hiddenBottomef={link.url}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -97,9 +97,9 @@
 	<div class="hero-content flex-col lg:flex-row pb-32">
 		<div class="md:pl-8 px-4 py-6 rounded-3xl">
 			<div class="">
-				<h1 class="text-3xl font-bold animate-pulse hiddenRight">Personal Mission</h1>
+				<h1 class="text-3xl font-bold animate-pulse hiddenBottom">Personal Mission</h1>
 
-				<p class="text-5xl font-extrabold text-pd text-gradient hiddenLeft">
+				<p class="text-4xl lg:text-5xl font-extrabold text-pd text-gradient hiddenLeft">
 					I aim to <span class="text-white">empower others to use technology for good</span> by unlocking
 					their potential to create the change they want to see in the world.
 				</p>
@@ -123,14 +123,14 @@
 				have time to work on all of these, so if one appeals to you, go for it! I truly believe
 				these are needed in the world so it honestly shouldn't matter who gets the credit for it.
 			</p>
-			<div class="mb-5 rounded-3xl hiddenRight area">
-				<h2 class="text-2xl font-bold text-primary text-glow-primary">
+			<div class="mb-5 rounded-3xl area">
+				<h2 class="text-2xl font-bold text-primary text-glow-primary hiddenBottom">
 					<Icon data={powerOff} />
 					Area 1: Authentic Personal Focus
 				</h2>
-				<p class="text-pd">
+				<p class="text-pd hiddenLeft">
 					Focus is necessary for people to prioritize what's personally important and maximize their
-					potential and impact on the world. To help, I highly recommend apps like
+					potential and impact on the world. To help, I highiddenLefty recommend apps like
 					<Link name="Forest" link="https://www.forestapp.cc/" color="primary" /> and
 					<Link name="Fabulous" link="https://www.thefabulous.co/" color="primary" />
 					which aid in digital detox and building healthy habits.
@@ -141,12 +141,12 @@
 					<i>big update coming in April 2023!</i>
 				</p>
 			</div>
-			<div class="mb-5 rounded-3xl hiddenLeft area">
-				<h2 class="text-2xl font-bold text-accent text-glow-accent">
+			<div class="mb-5 rounded-3xl area">
+				<h2 class="text-2xl font-bold text-accent text-glow-accent hiddenBottom">
 					<Icon data={book} />
 					Area 2: Enhanced STEM Education
 				</h2>
-				<p class="text-pd">
+				<p class="text-pd hiddenLeft">
 					STEM education is crucial to prepare people to accelerate positive societal change.
 					<Link name="Brilliant" link="https://brilliant.org/" /> excels in affordable interactive content
 					yet could benefit from greater breadth and industry recognition. Meanwhile,
@@ -157,12 +157,12 @@
 					<i>I'm actively looking for opportunities to contribute in this space.</i>
 				</p>
 			</div>
-			<div class="mb-5 rounded-3xl hiddenRight area">
-				<h2 class="text-2xl font-bold text-secondary text-glow-secondary">
+			<div class="mb-5 rounded-3xl area">
+				<h2 class="text-2xl font-bold text-secondary text-glow-secondary hiddenBottom">
 					<Icon data={group} />
 					Area 3: Purpose-led Recruiting
 				</h2>
-				<p class="text-pd">
+				<p class="text-pd hiddenLeft">
 					Matching purpose-driven individuals with organizations that share their values is
 					essential for reducing turnover and driving positive change.
 					<Link name="Idealist" link="https://www.idealist.org/" color="secondary" /> and

@@ -45,19 +45,19 @@
 
 /* Animate on scroll classes */
 
-.hiddenLeft, .hiddenRight {
+.hiddenLeft, .hiddenBottom {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
 }
 
-.hiddenRight {
-    transform: translateX(100%);
+.hiddenBottom {
+    transform: translateY(100%);
 }
 
 @media(prefers-reduced-motion) {
-    .hiddenLeft, .hiddenRight {
+    .hiddenLeft, .hiddenBottom {
         transition: none;
     }
 }
