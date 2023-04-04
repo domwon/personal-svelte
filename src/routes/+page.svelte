@@ -48,7 +48,7 @@
 </script>
 
 <!-- Hero -->
-<div class="hero min-h-screen bg-gradient-to-b from-[#130E1D] to-base-300 to-100%">
+<div class="hero min-h-screen bg-gradient-to-b from-[#130E1D] to-gray-900 to-100%">
 	<div class="hero-content flex-col lg:flex-row">
 		<img
 			src="/dom-green.jpeg"
@@ -93,21 +93,21 @@
 </div>
 
 <!-- Mission -->
-<div class="hero min-h-screen bg-gradient-to-b from-base-300 to-gray-800">
+<div class="hero min-h-screen bg-svg bg-no-repeat bg-center" style="background-image: url('/bg-personal-mission.svg')">
 	<div class="hero-content flex-col lg:flex-row pb-32">
 		<div class="md:pl-8 px-4 py-6 rounded-3xl">
 			<div class="">
 				<h1 class="text-3xl font-bold animate-pulse hiddenBottom">Personal Mission</h1>
 
 				<p class="text-4xl lg:text-5xl font-extrabold text-pd text-gradient hiddenLeft">
-					I aim to <span class="text-white">empower others to use technology for good</span> by unlocking
-					their potential to create the change they want to see in the world.
+					I aim to empower others to <span class="text-white">use technology for good</span> by unlocking
+					their potential to <span class="text-[#DD7BEC] text-glow-change">create the change they want to see in the world.</span>
 				</p>
 			</div>
 		</div>
 		<img
 			src="/astronaut-w-heart-cropped.png"
-			class="pb-5 max-w-xs object-scale-down h-52 animate-pulse"
+			class="pb-5 max-w-xs object-scale-down h-52 animate-wigglePulse"
 			alt="astronaut with heart"
 		/>
 	</div>
