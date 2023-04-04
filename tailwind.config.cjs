@@ -6,7 +6,18 @@ export default {
   ],
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        wigglePulse: 'wigglePulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      keyframes: {
+        wigglePulse: {
+          '0%, 100%': { transform: 'rotate(-3deg)', opacity: 1 },
+          '50%': { transform: 'rotate(3deg)', opacity: 0.75 },
+
+        }
+      }
+    },
   },
   daisyui: {
     themes: [
