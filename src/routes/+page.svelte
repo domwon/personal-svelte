@@ -68,7 +68,7 @@
 					<li class="linkie hiddenLeft">
 						<a
 							class="link link-{link.color}"
-							hiddenBottomef={link.url}
+							href={link.url}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -130,7 +130,7 @@
 				</h2>
 				<p class="text-pd hiddenLeft">
 					Focus is necessary for people to prioritize what's personally important and maximize their
-					potential and impact on the world. To help, I highiddenLefty recommend apps like
+					potential and impact on the world. To help, I highly recommend apps like
 					<Link name="Forest" link="https://www.forestapp.cc/" color="primary" /> and
 					<Link name="Fabulous" link="https://www.thefabulous.co/" color="primary" />
 					which aid in digital detox and building healthy habits.

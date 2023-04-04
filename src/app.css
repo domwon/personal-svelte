@@ -7,7 +7,7 @@
 }
 
 .text-pd {
-    @apply py-6 max-w-md md:max-w-2xl;
+    @apply py-6 max-w-md md:max-w-3xl;
 }
 
 /* Glow CSS classes */
