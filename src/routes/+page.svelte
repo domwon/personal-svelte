@@ -69,7 +69,7 @@
 		/>
 		<div class="md:pl-8">
 			<h1 class="text-4xl font-bold hiddenLeft text-gradient">Dominic Nguyen</h1>
-			<p class="py-6 max-w-md md:max-w-sm hiddenBottom text-white">
+			<p class="py-6 max-w-md hiddenBottom text-white">
 				Hi there! I'm a full-stack developer & data scientist currently building
 				<Link name="XplorePod" link="https://xplorepod.com" />, a productivity app to help people do
 				more of what matters to them most and get more out of life.
@@ -102,9 +102,9 @@
 			</ul>
 		</div>
 	</div>
-	<div class="mt-auto mb-3">
+	<div class="mt-auto mb-3 tooltip" data-tip="My mission">
 		<button on:click={() => scrollToAnchor('#mission')} class="animate-bounce">
-			<Icon data={chevronDown} class="hover:text-gray-50" />
+			<Icon data={chevronDown} class="hover:text-gray-50 hover:scale-125" />
 		</button>
 	</div>
 </div>
@@ -117,15 +117,15 @@
 >
 	<div class="hero-content flex-col lg:flex-row pb-32">
 		<div class="md:pl-8 py-6 rounded-3xl">
-			<div class="">
-				<h1 class="text-3xl font-bold animate-pulse hiddenBottom">Personal Mission</h1>
+			<h1 class="text-3xl font-bold animate-pulse hiddenBottom">Personal Mission</h1>
 
-				<p class="text-4xl lg:text-5xl font-extrabold text-pd text-gradient hiddenLeft">
-					I aim to <span class="text-white">empower others to use technology for good</span> 
-					by unlocking their potential to
-					<span class="text-[#DD7BEC] text-glow-change">create positive change.</span>
-				</p>
-			</div>
+			<p
+				class="text-4xl lg:text-5xl font-extrabold py-6 max-w-md md:max-w-xl text-gradient hiddenLeft"
+			>
+				I aim to <span class="text-white">empower others to use technology for good</span>
+				by unlocking their potential to
+				<span class="text-[#DD7BEC] text-glow-change">create positive change.</span>
+			</p>
 		</div>
 		<img
 			src="/astronaut-w-heart-cropped.png"
@@ -136,7 +136,10 @@
 </div>
 
 <!-- Key Areas -->
-<div class="hero min-h-screen bg-gradient-to-b from-gray-800 to-base-200">
+<div
+	class="hero min-h-screen bg-svg bg-no-repeat bg-center"
+	style="background-image: url('/bg-personal-key-areas.svg')"
+>
 	<div class="hero-content flex-col lg:flex-row mb-5">
 		<div class="md:pl-8">
 			<h1 class="text-3xl font-bold text-white">Key Areas</h1>
@@ -179,7 +182,7 @@
 					<i>I'm actively looking for opportunities to contribute in this space.</i>
 				</p>
 			</div>
-			<div class="mb-5 rounded-3xl area">
+			<div class="mb-10 rounded-3xl area">
 				<h2 class="text-2xl font-bold text-secondary text-glow-secondary hiddenBottom">
 					<Icon data={group} />
 					Area 3: Purpose-led Recruiting
