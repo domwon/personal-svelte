@@ -20,19 +20,18 @@
 <circle cx="3.79827" cy="3.79827" r="3.79827" transform="matrix(0.239272 0.970953 0.970953 -0.239272 1339.55 861.524)" fill="#EBEBEB" fill-opacity="0.85"/>
 <circle cx="7.23326" cy="7.23326" r="7.23326" transform="matrix(0.239272 0.970953 0.970953 -0.239272 539.002 780.461)" fill="#EBEBEB" fill-opacity="0.7"/>
 <circle cx="1361.67" cy="716.828" r="3.44441" transform="rotate(76.1564 1361.67 716.828)" fill="#EBEBEB" fill-opacity="0.5"/>
-<circle cx="905.171" cy="916.169" r="3.44441" transform="rotate(76.1564 905.171 916.169)" fill="#EBEBEB" fill-opacity="0.5"/>
-<circle cx="5.8555" cy="5.8555" r="5.8555" transform="matrix(0.239272 0.970953 0.970953 -0.239272 1379 900.802)" fill="#EBEBEB" fill-opacity="0.8"/>
-<circle cx="5.8555" cy="5.8555" r="5.8555" transform="matrix(0.239272 0.970953 0.970953 -0.239272 1181.19 914.656)" fill="#EBEBEB" fill-opacity="0.8"/>
+<circle cx="911.169" cy="890.169" r="3.44441" transform="rotate(76.1564 911.169 890.169)" fill="#EBEBEB" fill-opacity="0.5"/>
+<circle cx="5.8555" cy="5.8555" r="5.8555" transform="matrix(0.239272 0.970953 0.970953 -0.239272 1174 903.802)" fill="#EBEBEB" fill-opacity="0.8"/>
 <circle cx="3.80623" cy="3.80623" r="3.80623" transform="matrix(0.239272 0.970953 0.970953 -0.239272 1290 904.821)" fill="#EBEBEB" fill-opacity="0.9"/>
 <circle cx="7.28244" cy="7.28244" r="7.28244" transform="matrix(0.278654 0.960392 0.960392 -0.278654 22.3906 735.058)" fill="#EBEBEB" fill-opacity="0.8"/>
 <circle cx="6.65872" cy="6.65872" r="6.65872" transform="matrix(0.278654 0.960392 0.960392 -0.278654 247 454.853)" fill="#EBEBEB" fill-opacity="0.85"/>
-<circle cx="7.30633" cy="7.30633" r="7.30633" transform="matrix(0.278654 0.960392 0.960392 -0.278654 765 250.072)" fill="#EBEBEB" fill-opacity="0.85"/>
-<circle cx="7.23326" cy="7.23326" r="7.23326" transform="matrix(0.278654 0.960392 0.960392 -0.278654 20 900.031)" fill="#EBEBEB" fill-opacity="0.7"/>
+<circle cx="7.30633" cy="7.30633" r="7.30633" transform="matrix(0.278654 0.960392 0.960392 -0.278654 1016 285.072)" fill="#EBEBEB" fill-opacity="0.85"/>
+<circle cx="7.23326" cy="7.23326" r="7.23326" transform="matrix(0.278654 0.960392 0.960392 -0.278654 48 861.031)" fill="#EBEBEB" fill-opacity="0.7"/>
 <circle cx="511.267" cy="602.268" r="3.44441" transform="rotate(73.8201 511.267 602.268)" fill="#EBEBEB" fill-opacity="0.5"/>
 <circle cx="104.658" cy="826.778" r="3.44441" transform="rotate(73.8201 104.658 826.778)" fill="#EBEBEB" fill-opacity="0.5"/>
 <circle cx="5.8555" cy="5.8555" r="5.8555" transform="matrix(0.278654 0.960392 0.960392 -0.278654 757.391 729.798)" fill="#EBEBEB" fill-opacity="0.8"/>
 <circle cx="5.8555" cy="5.8555" r="5.8555" transform="matrix(0.278654 0.960392 0.960392 -0.278654 1399 298.263)" fill="#EBEBEB" fill-opacity="0.8"/>
-<circle cx="10.6777" cy="10.6777" r="10.6777" transform="matrix(0.278654 0.960392 0.960392 -0.278654 481 884.951)" fill="#EBEBEB" fill-opacity="0.85"/>
+<circle cx="4.93896" cy="4.93896" r="4.93896" transform="matrix(0.278654 0.960392 0.960392 -0.278654 472 881.752)" fill="#EBEBEB" fill-opacity="0.85"/>
 <circle cx="657.167" cy="80.1685" r="3.44441" transform="rotate(76.1564 657.167 80.1685)" fill="#EBEBEB" fill-opacity="0.5"/>
 <circle cx="1304.8" cy="171.23" r="38.2298" fill="#8CB4CA" fill-opacity="0.1"/>
 <circle cx="1304.7" cy="171.131" r="32.2195" fill="#8CB4CA"/>
@@ -51,13 +50,13 @@
 <g mask="url(#mask1_803_141)">
 <circle cx="129.039" cy="558.213" r="27.3905" fill="url(#paint2_linear_803_141)"/>
 </g>
-<circle cx="1440.04" cy="900.04" r="26.04" fill="#CAB98C" fill-opacity="0.1"/>
-<circle cx="1439.97" cy="899.973" r="21.9461" fill="#CAB98C"/>
-<mask id="mask2_803_141" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1418" y="878" width="44" height="44">
-<circle cx="1439.97" cy="899.973" r="21.9461" fill="#CB7373"/>
+<circle cx="1440.04" cy="877.04" r="26.04" fill="#CAB98C" fill-opacity="0.1"/>
+<circle cx="1439.97" cy="876.973" r="21.9461" fill="#CAB98C"/>
+<mask id="mask2_803_141" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1418" y="855" width="44" height="44">
+<circle cx="1439.97" cy="876.973" r="21.9461" fill="#CB7373"/>
 </mask>
 <g mask="url(#mask2_803_141)">
-<circle cx="1433.26" cy="894.201" r="21.9461" fill="#E7CF92"/>
+<circle cx="1433.26" cy="871.201" r="21.9461" fill="#E7CF92"/>
 </g>
 <circle cx="1156.5" cy="669.5" r="242.5" fill="#7FEA5A" fill-opacity="0.1"/>
 <circle cx="1157.15" cy="670.149" r="202.948" fill="url(#paint3_linear_803_141)"/>
