@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Link from '../components/Link.svelte';
 
 	// Icons
@@ -7,6 +7,7 @@
 	import linkedin from 'svelte-awesome/icons/linkedin';
 	import github from 'svelte-awesome/icons/github';
 	import envelope from 'svelte-awesome/icons/envelope';
+	import chevronDown from 'svelte-awesome/icons/chevronDown';
 	import powerOff from 'svelte-awesome/icons/powerOff';
 	import book from 'svelte-awesome/icons/book';
 	import group from 'svelte-awesome/icons/group';
@@ -45,10 +46,21 @@
 			}
 		});
 	});
+
+	// Scroll to mission hero element
+	function scrollToAnchor(anchorId: string) {
+		const anchor = document.querySelector(anchorId);
+		if (anchor) {
+			anchor.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
 </script>
 
-<!-- Hero -->
-<div class="hero min-h-screen bg-gradient-to-b from-[#130E1D] to-gray-900 to-100%">
+<!-- Splash -->
+<div
+	class="hero min-h-screen bg-svg bg-no-repeat bg-center"
+	style="background-image: url('/bg-personal-splash.svg')"
+>
 	<div class="hero-content flex-col lg:flex-row">
 		<img
 			src="/dom-green.jpeg"
@@ -90,18 +102,28 @@
 			</ul>
 		</div>
 	</div>
+	<div class="mt-auto mb-3">
+		<button on:click={() => scrollToAnchor('#mission')} class="animate-bounce">
+			<Icon data={chevronDown} class="hover:text-gray-50" />
+		</button>
+	</div>
 </div>
 
 <!-- Mission -->
-<div class="hero min-h-screen bg-svg bg-no-repeat bg-center" style="background-image: url('/bg-personal-mission.svg')">
+<div
+	id="mission"
+	class="hero min-h-screen bg-svg bg-no-repeat bg-center"
+	style="background-image: url('/bg-personal-mission.svg')"
+>
 	<div class="hero-content flex-col lg:flex-row pb-32">
-		<div class="md:pl-8 px-4 py-6 rounded-3xl">
+		<div class="md:pl-8 py-6 rounded-3xl">
 			<div class="">
 				<h1 class="text-3xl font-bold animate-pulse hiddenBottom">Personal Mission</h1>
 
 				<p class="text-4xl lg:text-5xl font-extrabold text-pd text-gradient hiddenLeft">
-					I aim to empower others to <span class="text-white">use technology for good</span> by unlocking
-					their potential to <span class="text-[#DD7BEC] text-glow-change">create the change they want to see in the world.</span>
+					I aim to <span class="text-white">empower others to use technology for good</span> 
+					by unlocking their potential to
+					<span class="text-[#DD7BEC] text-glow-change">create positive change.</span>
 				</p>
 			</div>
 		</div>
