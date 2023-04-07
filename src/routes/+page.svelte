@@ -54,6 +54,50 @@
 			anchor.scrollIntoView({ behavior: 'smooth' });
 		}
 	}
+
+	// Design portfolio items
+	const designItems = [
+		{
+			title: 'Personal Website',
+			img: '/lava-I.svg',
+			desc: 'Visual showcase of personal mission',
+			link: 'https://domknguyen.com',
+			date: 'Apr 2023',
+			tags: ['Figma', 'Svelte', 'TailwindCSS']
+		},
+		{
+			title: 'XplorePod',
+			img: '/tundra-I.svg',
+			desc: 'Productivity & focus app that gamifies activity logging (gamification updates in progress). Tutorial has many self-created Figma assets',
+			link: 'https://domknguyen.com',
+			date: 'Dec 2021 - present',
+			tags: ['Figma', 'Angular', 'Ionic']
+		},
+		{
+			title: 'Yumaroo NMotion Demo Day Deck',
+			img: '/ocean-I.svg',
+			desc: 'Visual storytelling of meal recommendation startup using animations in Keynote',
+			link: 'https://domknguyen.com',
+			date: 'Dec 2018',
+			tags: ['Keynote']
+		},
+		{
+			title: 'Refyne',
+			img: '/desert-I.svg',
+			desc: 'Interactive game web app to teach K-12 students basic chemical engineering concepts',
+			link: 'https://domwon.github.io/Refyne1',
+			date: 'Dec 2017',
+			tags: ['Angular', 'Ionic']
+		},
+		{
+			title: 'Baseball Data',
+			img: '/gas-special-red-purple.svg',
+			desc: 'First & only use of D3 in interactive data visualization project for Udacity Nanodegree',
+			link: 'https://domwon.github.io/Baseball-Data',
+			date: 'Aug 2017',
+			tags: ['D3']
+		}
+	];
 </script>
 
 <!-- Splash -->
@@ -202,6 +246,49 @@
 					recruiting the norm rather than an exception.
 					<i>I plan to build something in this area soon!</i>
 				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Design Portfolio -->
+<div
+	class="hero min-h-screen bg-svg bg-no-repeat bg-center"
+	style="background-image: url('/bg-personal-key-areas.svg')"
+>
+<!-- TODO: Change BG SVG to blend with BG section above it -->
+	<div class="hero-content flex-col lg:flex-row mb-5">
+		<div class="md:pl-8">
+			<h1 class="text-3xl font-bold text-white">Design Portfolio</h1>
+			<p class="text-pd mb-2" />
+
+			<div
+				class="carousel carousel-center max-w-xs md:max-w-3xl p-4 space-x-4 bg-neutral rounded-box"
+			>
+				{#each designItems as item}
+				<!-- TODO: Link to project website -->
+					<div class="carousel-item">
+						<div class="card card-compact w-80 bg-base-100 shadow-xl">
+							<figure class="p-4">
+								<img
+									src={item.img}
+									class="max-w-xs object-scale-down h-52 hover:animate-wigglePulse hover:cursor-pointer"
+									alt="planet"
+								/>
+							</figure>
+							<div class="card-body">
+								<h2 class="card-title">{item.title}</h2>
+								<p>{item.desc}</p>
+								<p class="italic text-gray-600">{item.date}</p>
+								<div class="card-actions justify-end">
+									{#each item.tags as tag}
+										<div class="badge badge-outline">{tag}</div>
+									{/each}
+								</div>
+							</div>
+						</div>
+					</div>
+				{/each}
 			</div>
 		</div>
 	</div>
