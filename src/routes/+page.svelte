@@ -60,7 +60,7 @@
 		{
 			title: 'Personal Website',
 			img: '/lava-I.svg',
-			desc: 'Visual showcase of personal mission',
+			desc: 'Visual showcase of personal mission and focus areas',
 			link: 'https://domknguyen.com',
 			date: 'Apr 2023',
 			tags: ['Figma', 'Svelte', 'TailwindCSS']
@@ -68,16 +68,16 @@
 		{
 			title: 'XplorePod',
 			img: '/tundra-I.svg',
-			desc: 'Productivity & focus app that gamifies activity logging (gamification updates in progress). Tutorial has many self-created Figma assets',
-			link: 'https://domknguyen.com',
+			desc: 'Productivity app that gamifies activity logging (gamification & UI updates in progress).',
+			link: 'https://xplorepod.com',
 			date: 'Dec 2021 - present',
 			tags: ['Figma', 'Angular', 'Ionic']
 		},
 		{
-			title: 'Yumaroo NMotion Demo Day Deck',
+			title: 'Yumaroo Demo Day Deck',
 			img: '/ocean-I.svg',
 			desc: 'Visual storytelling of meal recommendation startup using animations in Keynote',
-			link: 'https://domknguyen.com',
+			link: 'https://www.youtube.com/watch?v=N7g0P_zAIEo',
 			date: 'Dec 2018',
 			tags: ['Keynote']
 		},
@@ -119,7 +119,7 @@
 				more of what matters to them most and get more out of life.
 			</p>
 
-			<ul class="menu menu-horizontal bg-base-100 p-2 rounded-box hiddenLeft">
+			<ul class="menu menu-horizontal bg-base-300 p-2 rounded-box hiddenLeft">
 				{#each links as link}
 					<li class="linkie hiddenLeft">
 						<a
@@ -254,41 +254,42 @@
 <!-- Design Portfolio -->
 <div
 	class="hero min-h-screen bg-svg bg-no-repeat bg-center"
-	style="background-image: url('/bg-personal-key-areas.svg')"
+	style="background-image: url('/bg-personal-design-portfolio.svg')"
 >
-<!-- TODO: Change BG SVG to blend with BG section above it -->
+	<!-- TODO: Change BG SVG to blend with BG section above it -->
 	<div class="hero-content flex-col lg:flex-row mb-5">
-		<div class="md:pl-8">
+		<div class="md:pl-8 mt-10">
 			<h1 class="text-3xl font-bold text-white">Design Portfolio</h1>
 			<p class="text-pd mb-2" />
 
-			<div
-				class="carousel carousel-center max-w-xs md:max-w-3xl p-4 space-x-4 bg-neutral rounded-box"
-			>
-				{#each designItems as item}
-				<!-- TODO: Link to project website -->
-					<div class="carousel-item">
-						<div class="card card-compact w-80 bg-base-100 shadow-xl">
-							<figure class="p-4">
+			<div class="container text-pd">
+				<div class="flex flex-wrap -mx-1 lg:-mx-4">
+					{#each designItems as item}
+						<div
+							class="w-full md:w-1/2 card hover:scale-95 group"
+						>
+							<a href={item.link} target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center md:mx-5">
 								<img
-									src={item.img}
-									class="max-w-xs object-scale-down h-52 hover:animate-wigglePulse hover:cursor-pointer"
 									alt="planet"
+									class="max-w-xs object-scale-down h-36 my-4 group-hover:animate-wigglePulse"
+									src={item.img}
 								/>
-							</figure>
-							<div class="card-body">
-								<h2 class="card-title">{item.title}</h2>
-								<p>{item.desc}</p>
-								<p class="italic text-gray-600">{item.date}</p>
-								<div class="card-actions justify-end">
-									{#each item.tags as tag}
-										<div class="badge badge-outline">{tag}</div>
-									{/each}
+
+								<div class="card-body px-1">
+									<h2 class="card-title text-gray-300 group-hover:text-white">{item.title}</h2>
+
+									<p>{item.desc}</p>
+									<p class="italic text-gray-600">{item.date}</p>
+									<div class="card-actions justify-end opacity-0 group-hover:opacity-100">
+										{#each item.tags as tag}
+											<div class="badge badge-outline">{tag}</div>
+										{/each}
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
-					</div>
-				{/each}
+					{/each}
+				</div>
 			</div>
 		</div>
 	</div>
