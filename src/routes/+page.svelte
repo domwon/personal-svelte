@@ -256,7 +256,6 @@
 	class="hero min-h-screen bg-svg bg-no-repeat bg-center"
 	style="background-image: url('/bg-personal-design-portfolio.svg')"
 >
-	<!-- TODO: Change BG SVG to blend with BG section above it -->
 	<div class="hero-content flex-col lg:flex-row mb-5">
 		<div class="md:pl-8 mt-10">
 			<h1 class="text-3xl font-bold text-white">Design Portfolio</h1>
