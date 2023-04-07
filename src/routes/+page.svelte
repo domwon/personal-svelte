@@ -54,6 +54,50 @@
 			anchor.scrollIntoView({ behavior: 'smooth' });
 		}
 	}
+
+	// Design portfolio items
+	const designItems = [
+		{
+			title: 'Personal Website',
+			img: '/lava-I.svg',
+			desc: 'Visual showcase of personal mission and focus areas',
+			link: 'https://domknguyen.com',
+			date: 'Apr 2023',
+			tags: ['Figma', 'Svelte', 'TailwindCSS']
+		},
+		{
+			title: 'XplorePod',
+			img: '/tundra-I.svg',
+			desc: 'Productivity app that gamifies activity logging (gamification & UI updates in progress).',
+			link: 'https://xplorepod.com',
+			date: 'Dec 2021 - present',
+			tags: ['Figma', 'Angular', 'Ionic']
+		},
+		{
+			title: 'Yumaroo Demo Day Deck',
+			img: '/ocean-I.svg',
+			desc: 'Visual storytelling of meal recommendation startup using animations in Keynote',
+			link: 'https://www.youtube.com/watch?v=N7g0P_zAIEo',
+			date: 'Dec 2018',
+			tags: ['Keynote']
+		},
+		{
+			title: 'Refyne',
+			img: '/desert-I.svg',
+			desc: 'Interactive game web app to teach K-12 students basic chemical engineering concepts',
+			link: 'https://domwon.github.io/Refyne1',
+			date: 'Dec 2017',
+			tags: ['Angular', 'Ionic']
+		},
+		{
+			title: 'Baseball Data',
+			img: '/gas-special-red-purple.svg',
+			desc: 'First & only use of D3 in interactive data visualization project for Udacity Nanodegree',
+			link: 'https://domwon.github.io/Baseball-Data',
+			date: 'Aug 2017',
+			tags: ['D3']
+		}
+	];
 </script>
 
 <!-- Splash -->
@@ -75,7 +119,7 @@
 				more of what matters to them most and get more out of life.
 			</p>
 
-			<ul class="menu menu-horizontal bg-base-100 p-2 rounded-box hiddenLeft">
+			<ul class="menu menu-horizontal bg-base-300 p-2 rounded-box hiddenLeft">
 				{#each links as link}
 					<li class="linkie hiddenLeft">
 						<a
@@ -202,6 +246,49 @@
 					recruiting the norm rather than an exception.
 					<i>I plan to build something in this area soon!</i>
 				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Design Portfolio -->
+<div
+	class="hero min-h-screen bg-svg bg-no-repeat bg-center"
+	style="background-image: url('/bg-personal-design-portfolio.svg')"
+>
+	<div class="hero-content flex-col lg:flex-row mb-5">
+		<div class="md:pl-8 mt-10">
+			<h1 class="text-3xl font-bold text-white">Design Portfolio</h1>
+			<p class="text-pd mb-2" />
+
+			<div class="container text-pd">
+				<div class="flex flex-wrap -mx-1 lg:-mx-4">
+					{#each designItems as item}
+						<div
+							class="w-full md:w-1/2 card hover:scale-95 group"
+						>
+							<a href={item.link} target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center md:mx-5">
+								<img
+									alt="planet"
+									class="max-w-xs object-scale-down h-36 my-4 group-hover:animate-wigglePulse"
+									src={item.img}
+								/>
+
+								<div class="card-body px-1">
+									<h2 class="card-title text-gray-300 group-hover:text-white">{item.title}</h2>
+
+									<p>{item.desc}</p>
+									<p class="italic text-gray-600">{item.date}</p>
+									<div class="card-actions justify-end opacity-0 group-hover:opacity-100">
+										{#each item.tags as tag}
+											<div class="badge badge-outline">{tag}</div>
+										{/each}
+									</div>
+								</div>
+							</a>
+						</div>
+					{/each}
+				</div>
 			</div>
 		</div>
 	</div>
