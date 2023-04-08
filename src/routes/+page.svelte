@@ -270,11 +270,11 @@
 							<a href={item.link} target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center md:mx-5">
 								<img
 									alt="planet"
-									class="max-w-xs object-scale-down h-36 my-4 group-hover:animate-wigglePulse"
+									class="max-w-xs object-scale-down h-36 my-4 group-hover:animate-wigglePulse hiddenBottom"
 									src={item.img}
 								/>
 
-								<div class="card-body px-1">
+								<div class="card-body px-1 hiddenLeft">
 									<h2 class="card-title text-gray-300 group-hover:text-white">{item.title}</h2>
 
 									<p>{item.desc}</p>
