@@ -148,7 +148,7 @@
 	</div>
 	<div class="mt-auto mb-3 tooltip" data-tip="My mission">
 		<button on:click={() => scrollToAnchor('#mission')} class="animate-bounce">
-			<Icon data={chevronDown} class="hover:text-gray-50 hover:scale-125" />
+			<Icon data={chevronDown} class="hover:text-gray-50 hover:scale-125 lg:scale-150" />
 		</button>
 	</div>
 </div>
@@ -207,7 +207,7 @@
 					However, there's still an opportunity to specifically help those who want to create good yet
 					lack focus or discipline, something I personally recently struggled with. That's why I'm building
 					<Link name="XplorePod" link="https://xplorepod.com" color="primary" /> to address this -
-					<i>big update coming in April 2023!</i>
+					<i>big update coming soon!</i>
 				</p>
 			</div>
 			<div class="mb-5 rounded-3xl area">
@@ -270,11 +270,11 @@
 							<a href={item.link} target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center md:mx-5">
 								<img
 									alt="planet"
-									class="max-w-xs object-scale-down h-36 my-4 group-hover:animate-wigglePulse"
+									class="max-w-xs object-scale-down h-36 my-4 group-hover:animate-wigglePulse hiddenBottom"
 									src={item.img}
 								/>
 
-								<div class="card-body px-1">
+								<div class="card-body px-1 hiddenLeft">
 									<h2 class="card-title text-gray-300 group-hover:text-white">{item.title}</h2>
 
 									<p>{item.desc}</p>
