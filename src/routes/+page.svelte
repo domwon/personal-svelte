@@ -207,7 +207,7 @@
 					However, there's still an opportunity to specifically help those who want to create good yet
 					lack focus or discipline, something I personally recently struggled with. That's why I'm building
 					<Link name="XplorePod" link="https://xplorepod.com" color="primary" /> to address this -
-					<i>big update coming soon!</i>
+					<i>join the beta today!</i>
 				</p>
 			</div>
 			<div class="mb-5 rounded-3xl area">
