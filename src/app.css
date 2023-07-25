@@ -43,6 +43,10 @@
     text-shadow: 0 0 5px rgba(255, 134, 58, 0.2), 0 0 10px rgba(255, 134, 58, 0.5);
 }
 
+.text-glow-success {
+    text-shadow: 0 0 5px rgba(116, 223, 132, 0.2), 0 0 10px rgba(116, 223, 132, 0.5);
+}
+
 .text-glow-change {
     text-shadow: 0 0 5px rgba(221, 123, 236, 0.2), 0 0 10px rgba(221, 123, 236, 0.5);
 }
