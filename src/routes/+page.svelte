@@ -265,7 +265,7 @@
 					The transition to cleaner energy needs to happen at several layers, both through reducing emissions
 					in established industries such as oil & gas and developing new technologies and systems where
 					alternative energy sources can thrive.
-					<i>I'd love find ways to contribute in this space again.</i>
+					<i>I'd love to find ways to contribute in this space again.</i>
 				</p>
 			</div>
 		</div>
