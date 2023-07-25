@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   safelist: [
-    'link-primary', 'link-secondary', 'link-warning', 'link-accent',
+    'link-primary', 'link-secondary', 'link-warning', 'link-accent', 'link-success',
     'opacity-0', 'transform', 'translate-y-5', 'transition-opacity', 'duration-1000'
   ],
   content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -26,6 +26,7 @@ export default {
           ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
           primary: "#ec4899",
           secondary: "#ff5b6a",
+          success: "#74DF84",
           accent: "#ff863a",
           warning: "#eab308",
         },

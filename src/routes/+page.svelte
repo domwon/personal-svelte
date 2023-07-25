@@ -247,6 +247,27 @@
 					<i>I plan to build something in this area soon!</i>
 				</p>
 			</div>
+			<div class="mb-10 rounded-3xl area">
+				<h2 class="text-2xl font-bold text-success text-glow-success hiddenBottom">
+					<Icon data={group} />
+					Area 4: Tech-Driven Greener Energy
+				</h2>
+				<p class="text-pd hiddenLeft">
+					None of the above endeavors matter if we don't preserve our planet. Having
+					worked several years at <Link
+						name="ExxonMobil"
+						link="https://exxonmobil.com"
+						color="success"
+					/>, I've learned how vital energy is to power modern everyday life. Yet, digital
+					innovation and new technologies should be leveraged to make energy more sustainable and
+					not only to meet demand.
+					<br /><br />
+					The transition to cleaner energy needs to happen at several layers, both through reducing emissions
+					in established industries such as oil & gas and developing new technologies and systems where
+					alternative energy sources can thrive.
+					<i>I'd love to find ways to contribute in this space again.</i>
+				</p>
+			</div>
 		</div>
 	</div>
 </div>
@@ -264,10 +285,13 @@
 			<div class="container text-pd">
 				<div class="flex flex-wrap -mx-1 lg:-mx-4">
 					{#each designItems as item}
-						<div
-							class="w-full md:w-1/2 card hover:scale-95 group"
-						>
-							<a href={item.link} target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center md:mx-5">
+						<div class="w-full md:w-1/2 card hover:scale-95 group">
+							<a
+								href={item.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="flex flex-col items-center justify-center md:mx-5"
+							>
 								<img
 									alt="planet"
 									class="max-w-xs object-scale-down h-36 my-4 group-hover:animate-wigglePulse hiddenBottom"
