@@ -114,9 +114,9 @@
 		<div class="md:pl-8">
 			<h1 class="text-4xl font-bold hiddenLeft text-gradient">Dominic Nguyen</h1>
 			<p class="py-6 max-w-md hiddenBottom text-white">
-				Hi there! I'm a full-stack developer & data scientist currently building
-				<Link name="XplorePod" link="https://xplorepod.com" />, a productivity app to help people do
-				more of what matters to them most and get more out of life.
+				Hi there! I'm a full-stack developer & data scientist currently solo building a few
+				<Link name="apps" link="/apps" /> to help people focus and get more out of life. Previously, I did
+				research at NASA, data science at a Fortune 5 company, and led venture-backed startups.
 			</p>
 
 			<ul class="menu menu-horizontal bg-base-300 p-2 rounded-box hiddenLeft">
@@ -253,14 +253,11 @@
 					Area 4: Tech-Driven Greener Energy
 				</h2>
 				<p class="text-pd hiddenLeft">
-					None of the above endeavors matter if we don't preserve our planet. Having
-					worked several years at <Link
-						name="ExxonMobil"
-						link="https://exxonmobil.com"
-						color="success"
-					/>, I've learned how vital energy is to power modern everyday life. Yet, digital
-					innovation and new technologies should be leveraged to make energy more sustainable and
-					not only to meet demand.
+					None of the above endeavors matter if we don't preserve our planet. Having worked several
+					years at <Link name="ExxonMobil" link="https://exxonmobil.com" color="success" />, I've
+					learned how vital energy is to power modern everyday life. Yet, digital innovation and new
+					technologies should be leveraged to make energy more sustainable and not only to meet
+					demand.
 					<br /><br />
 					The transition to cleaner energy needs to happen at several layers, both through reducing emissions
 					in established industries such as oil & gas and developing new technologies and systems where
@@ -279,8 +276,8 @@
 >
 	<div class="hero-content flex-col lg:flex-row mb-5">
 		<div class="md:pl-8 mt-10">
-			<h1 class="text-3xl font-bold text-white">Design Portfolio</h1>
-			<p class="text-pd mb-2" />
+			<h1 class="text-3xl font-bold text-white">Projects</h1>
+			<p class="text-pd mb-2">See current apps <Link name="here" link="/apps" /></p>
 
 			<div class="container text-pd">
 				<div class="flex flex-wrap -mx-1 lg:-mx-4">
