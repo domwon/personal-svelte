@@ -58,28 +58,44 @@
 	// Design portfolio items
 	const designItems = [
 		{
+			title: 'SeaSpar',
+			img: '/ocean-I.svg',
+			desc: 'Digital naval board game playable across multiple phones for more present gatherings',
+			link: 'https://seaspar.mobiboard.games',
+			date: 'Sep 2023 - present',
+			tags: ['Svelte', 'Typescript', 'Firebase', 'Figma', 'TailwindCSS']
+		},
+		{
+			title: 'ROVEE',
+			img: '/ice-I.svg',
+			desc: 'A fun space-cleaning app that helps you stop scrolling on social media in the morning',
+			link: 'https://rovee.app',
+			date: 'Aug 2023 - present',
+			tags: ['Svelte', 'Typescript', 'Firebase', 'Figma', 'TailwindCSS']
+		},
+		{
 			title: 'Personal Website',
-			img: '/lava-I.svg',
+			img: '/gas-special-red-purple.svg',
 			desc: 'Visual showcase of personal mission and focus areas',
 			link: 'https://domknguyen.com',
 			date: 'Apr 2023',
-			tags: ['Figma', 'Svelte', 'TailwindCSS']
+			tags: ['Svelte', 'TypeScript', 'Figma', 'TailwindCSS']
 		},
 		{
 			title: 'XplorePod',
-			img: '/tundra-I.svg',
-			desc: 'Productivity app that gamifies activity logging (gamification & UI updates in progress).',
+			img: '/savannah-I.svg',
+			desc: 'A space-themed app that makes it fun to focus, track, and do more of what matters to you most',
 			link: 'https://xplorepod.com',
 			date: 'Dec 2021 - present',
-			tags: ['Figma', 'Angular', 'Ionic']
+			tags: ['Angular', 'Typescript', 'Firebase', 'NodeJS', 'PWA', 'RxJS', 'Figma', 'TailwindCSS']
 		},
 		{
 			title: 'Yumaroo Demo Day Deck',
-			img: '/ocean-I.svg',
-			desc: 'Visual storytelling of meal recommendation startup using animations in Keynote',
+			img: '/tundra-I.svg',
+			desc: 'Visual storytelling of menu analytics startup using animations at NMotion 2018 demo day',
 			link: 'https://www.youtube.com/watch?v=N7g0P_zAIEo',
 			date: 'Dec 2018',
-			tags: ['Keynote']
+			tags: ['Keynote', 'Angular', 'Typescript', 'Firebase', 'NodeJS', 'PWA', 'RxJS', 'Ionic', 'Capacitor']
 		},
 		{
 			title: 'Refyne',
@@ -87,15 +103,15 @@
 			desc: 'Interactive game web app to teach K-12 students basic chemical engineering concepts',
 			link: 'https://domwon.github.io/Refyne1',
 			date: 'Dec 2017',
-			tags: ['Angular', 'Ionic']
+			tags: ['Angular', 'JavaScript', 'Ionic']
 		},
 		{
 			title: 'Baseball Data',
-			img: '/gas-special-red-purple.svg',
+			img: '/lava-I.svg',
 			desc: 'First & only use of D3 in interactive data visualization project for Udacity Nanodegree',
 			link: 'https://domwon.github.io/Baseball-Data',
 			date: 'Aug 2017',
-			tags: ['D3']
+			tags: ['D3', 'JavaScript', 'HTML', 'CSS']
 		}
 	];
 </script>
@@ -115,8 +131,8 @@
 			<h1 class="text-4xl font-bold hiddenLeft text-gradient">Dominic Nguyen</h1>
 			<p class="py-6 max-w-md hiddenBottom text-white">
 				Hi there! I'm a full-stack developer & data scientist currently solo building a few
-				<Link name="apps" link="/apps" /> to help people focus and get more out of life. Previously, I did
-				research at NASA, data science at a Fortune 5 company, and led venture-backed startups.
+				<Link name="apps" link="/apps" /> to help people focus and get more out of life. Previously,
+				I did research at NASA, data science at a Fortune 5 company, and led venture-backed startups.
 			</p>
 
 			<ul class="menu menu-horizontal bg-base-300 p-2 rounded-box hiddenLeft">
@@ -206,8 +222,12 @@
 					<br /><br />
 					However, there's still an opportunity to specifically help those who want to create good yet
 					lack focus or discipline, something I personally recently struggled with. That's why I'm building
-					<Link name="XplorePod" link="https://xplorepod.com" color="primary" /> to address this -
-					<i>join the beta today!</i>
+					<Link name="XplorePod" link="https://xplorepod.com" color="primary" /> and <Link
+						name="ROVEE"
+						link="https://rovee.app"
+						color="primary"
+					/> to address this -
+					<i>sign up today!</i>
 				</p>
 			</div>
 			<div class="mb-5 rounded-3xl area">
@@ -277,7 +297,6 @@
 	<div class="hero-content flex-col lg:flex-row mb-5">
 		<div class="md:pl-8 mt-10">
 			<h1 class="text-3xl font-bold text-white">Projects</h1>
-			<p class="text-pd mb-2">See current apps <Link name="here" link="/apps" /></p>
 
 			<div class="container text-pd">
 				<div class="flex flex-wrap -mx-1 lg:-mx-4">

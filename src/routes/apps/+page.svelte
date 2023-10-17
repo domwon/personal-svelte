@@ -1,4 +1,27 @@
 <script lang="ts">
+	import AppLink from '../../components/AppLink.svelte';
+
+	let apps = [
+		{
+			title: 'XplorePod',
+			desc: 'A space-themed app that makes it fun to focus, track, and do more of what matters to you most.',
+			icon: 'scout-icon.svg',
+			link: 'https://xplorepod.com',
+			a: 'Hi'
+		},
+		{
+			title: 'ROVEE',
+			desc: 'A fun space-cleaning app that helps you stop scrolling on social media in the morning.',
+			icon: 'rovee.svg',
+			link: 'https://rovee.app'
+		},
+		{
+			title: 'SeaSpar',
+			desc: 'Digital naval board game playable across multiple phones for more present gatherings.',
+			icon: 'seaspar.svg',
+			link: 'https://seaspar.mobiboard.games'
+		}
+	];
 </script>
 
 <div class="flex flex-col h-full w-full justify-center items-center">
@@ -12,28 +35,9 @@
 			</div>
 
 			<div class="mt-5">
-				<a class="card max-w-lg hover:bg-zinc-950 hover:animate-pulse p-4 flex flex-row items-center justify-center" href="https://xplorepod.com" target="_blank">
-                    <img src="scout-icon.svg" alt="xplorepod icon" class="ml-1 mr-3 h-16"/>
-                    <div>
-                        <h2 class="text-2xl font-bold underline">XplorePod</h2>
-                        <p>
-                            A space-themed app that makes it fun to focus, track, and do more of what matters to you
-                            most.
-                        </p>
-                    </div>
-		
-				</a>
-				<a
-					class="card max-w-lg hover:bg-zinc-950 hover:animate-pulse p-4 flex flex-row items-center mt-3"
-					href="https://rovee.app"
-					target="_blank"
-				>
-                <img src="rovee.svg" alt="xplorepod icon" class="ml-1 mr-3 h-16"/>
-                <div>
-					<h2 class="text-2xl font-bold underline">ROVEE</h2>
-					<p>A fun space-cleaning app that helps you stop scrolling on social media in the morning.</p>
-                </div>
-				</a>
+				{#each apps as app}
+					<AppLink {...app} />
+				{/each}
 
 				<div class="p-4">
 					<p class="mt-5">
